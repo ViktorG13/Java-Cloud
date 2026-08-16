@@ -5,11 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomeController {
-
-    @GetMapping("/dashboard")
-    public String index(Model model) {
-        model.addAttribute("user", "User");
-        return "dashboard";
+public class LogsController {
+    @GetMapping("/logs")
+    public String logs(Model model) {
+        return "logs";
     }
 }

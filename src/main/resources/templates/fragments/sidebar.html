@@ -1,0 +1,17 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <aside class="sidebar" th:fragment="sidebar">
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a th:href="@{/dashboard}">Dashboard</a></li>
+          <li><a th:href="@{/deliveries}">Entregas</a></li>
+          <li><a th:href="@{/new-delivery}">Nova Entrega</a></li>
+          <li><a th:href="@{/logs}">Relatórios</a></li>
+          <li><a th:href="@{/users}">Usuários</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </body>
+</html>
